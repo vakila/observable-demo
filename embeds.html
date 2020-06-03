@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Observable Embedded Cell Example</title>
+  </head>
+  <body>
+    <h1>Observable Embedding Examples </h1>
+    <p>See also: <a href="https://observablehq.com/@observablehq/downloading-and-embedding-notebooks">Downloading and Embedding Notebooks</a>.</p>
+    <br><br>
+    <h2>Single cell: Using "Embed code" in left margin:</h2>
+
+<div id="observablehq-16d2257e"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@d3/streamgraph-transitions.js?v=3";
+const inspect = Inspector.into("#observablehq-16d2257e");
+(new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
+</script>
+    <br><br>
+    
+  </body>
+</html>
+
