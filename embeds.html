@@ -9,7 +9,7 @@
         font-family: serif;
       }
 
-      pre {
+      .observable-code {
         padding: 1em 3em;
         background-color: #f5f5f5;
         font: var(--mono_fonts); 
@@ -27,7 +27,7 @@
     
     <h2>Single image: Using "Download SVG" in left margin: </h2> 
     <p>Download the .svg file & add file to Github repo, then add SVG object to your page, e.g.</p>
-    <pre class="observable-code"><object data="tangled-tree-visualization-ii.svg" type="image/svg+xml"></object></pre>    
+    <textarea class="observable-code"><object data="tangled-tree-visualization-ii.svg" type="image/svg+xml"></object></textarea>    
     <p>(Source: <a href="https://observablehq.com/@nitaku/tangled-tree-visualization-ii">@nitaku/tangled-tree-visualization-ii</a>)<p>
     
     <object data="tangled-tree-visualization-ii.svg" type="image/svg+xml"></object>
@@ -36,7 +36,7 @@
     
     <h2>Single dynamic/interactive cell: Using "Embed code" in left margin:</h2>
     <p>Copy HTML snippet, then paste into your web page, e.g.</p>
-    <pre class="observable-code">
+    <textarea class="observable-code">
 <div id="observablehq-59ca8222"></div>
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -44,7 +44,7 @@ import define from "https://api.observablehq.com/@d3/collapsible-tree.js?v=3";
 const inspect = Inspector.into("#observablehq-59ca8222");
 (new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
 </script>
-</pre>    
+</textarea>    
 
     <p>(Source: <a href="https://observablehq.com/@d3/collapsible-tree#chart">@d3/collapsible-tree</a>)</p>
     <div id="observablehq-59ca8222"></div>
@@ -61,7 +61,7 @@ const inspect = Inspector.into("#observablehq-59ca8222");
     <h2>Multiple cells: Using <a href="">Handy Embed Code Generator</a></h2>
     <p>Type in the notebook path, check the cells you want, then copy-paste the code into your page, e.g.</p>
     
-    <pre class="observable-code">
+    <textarea class="observable-code">
 <div id="observablehq-a2722172">
   <div class="observablehq-chart"></div>
   <div class="observablehq-viewof-year"></div>
@@ -75,7 +75,7 @@ const inspect = Inspector.into("#observablehq-59ca8222");
     if (name === "viewof year") return Inspector.into("#observablehq-a2722172 .observablehq-viewof-year")();
     if (name === "viewof locale") return Inspector.into("#observablehq-a2722172 .observablehq-viewof-locale")();
   });
-</script></pre>
+</script></textarea>
     <p>(Source: <a href="https://observablehq.com/@mbostock/phases-of-the-moon">@mbostock/phases-of-the-moon</a></p>
     <div id="observablehq-a2722172">
   <div class="observablehq-chart"></div>
