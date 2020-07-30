@@ -58,40 +58,46 @@ const inspect = Inspector.into("#observablehq-59ca8222");
     <br><br>
     
     
-    <h2>Multiple cells: Using <a href="">Handy Embed Code Generator</a></h2>
+    <h2>Multiple cells: Using <a href="https://observablehq.com/@jashkenas/handy-embed-code-generator">Handy Embed Code Generator</a></h2>
     <p>Type in the notebook path, check the cells you want, then copy-paste the code into your page, e.g.</p>
     
     <textarea class="observable-code" style="height:21em">
-<div id="observablehq-a2722172">
-  <div class="observablehq-chart"></div>
-  <div class="observablehq-viewof-year"></div>
-  <div class="observablehq-viewof-locale"></div>
+<div id="observablehq-83a45b9c">
+  <div class="observablehq-viewof-projectionName"></div>
+  <div class="observablehq-viewof-landColor"></div>
+  <div class="observablehq-viewof-waterColor"></div>
+  <div class="observablehq-map"></div>
 </div>
 <script type="module">
   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-  import define from "https://api.observablehq.com/@mbostock/phases-of-the-moon.js?v=3";
+  import define from "https://api.observablehq.com/@anjana/swirl-the-world.js?v=3";
   (new Runtime).module(define, name => {
-    if (name === "chart") return Inspector.into("#observablehq-a2722172 .observablehq-chart")();
-    if (name === "viewof year") return Inspector.into("#observablehq-a2722172 .observablehq-viewof-year")();
-    if (name === "viewof locale") return Inspector.into("#observablehq-a2722172 .observablehq-viewof-locale")();
-  });
-</script></textarea>
-    <p>(Source: <a href="https://observablehq.com/@mbostock/phases-of-the-moon">@mbostock/phases-of-the-moon</a></p>
-    <div id="observablehq-a2722172">
-  <div class="observablehq-chart"></div>
-  <div class="observablehq-viewof-year"></div>
-  <div class="observablehq-viewof-locale"></div>
-</div>
-<script type="module">
-  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-  import define from "https://api.observablehq.com/@mbostock/phases-of-the-moon.js?v=3";
-  (new Runtime).module(define, name => {
-    if (name === "chart") return Inspector.into("#observablehq-a2722172 .observablehq-chart")();
-    if (name === "viewof year") return Inspector.into("#observablehq-a2722172 .observablehq-viewof-year")();
-    if (name === "viewof locale") return Inspector.into("#observablehq-a2722172 .observablehq-viewof-locale")();
+    if (name === "viewof projectionName") return Inspector.into("#observablehq-83a45b9c .observablehq-viewof-projectionName")();
+    if (name === "viewof landColor") return Inspector.into("#observablehq-83a45b9c .observablehq-viewof-landColor")();
+    if (name === "viewof waterColor") return Inspector.into("#observablehq-83a45b9c .observablehq-viewof-waterColor")();
+    if (name === "map") return Inspector.into("#observablehq-83a45b9c .observablehq-map")();
   });
 </script>
+</textarea>
     
+    <p>(Source: <a href="https://observablehq.com/@anjana/swirl-the-world">@anjana/swirl-the-world</a></p>
+   
+<div id="observablehq-83a45b9c">
+  <div class="observablehq-viewof-projectionName"></div>
+  <div class="observablehq-viewof-landColor"></div>
+  <div class="observablehq-viewof-waterColor"></div>
+  <div class="observablehq-map"></div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@anjana/swirl-the-world.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "viewof projectionName") return Inspector.into("#observablehq-83a45b9c .observablehq-viewof-projectionName")();
+    if (name === "viewof landColor") return Inspector.into("#observablehq-83a45b9c .observablehq-viewof-landColor")();
+    if (name === "viewof waterColor") return Inspector.into("#observablehq-83a45b9c .observablehq-viewof-waterColor")();
+    if (name === "map") return Inspector.into("#observablehq-83a45b9c .observablehq-map")();
+  });
+</script>
     
   </body>
 </html>
